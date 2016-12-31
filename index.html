@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>Meowl Party</title>
   <meta name="viewport" content="width=device-width, height=device-height">
-  <style>html { background: #000; }</style>
+  <style>html { background: #000; min-height:100%; }</style>
 </head>
 <body>
   <!-- experience meowls -->
@@ -14,7 +14,7 @@
       var num = Math.floor(Math.random() * max) + 1
       var html = document.querySelector('html')
 
-      html.style.background = '#000 url(/meowls/' + num + '.jpg) no-repeat center center fixed'
+      html.style.background = '#000 url(./meowls/' + num + '.jpg) no-repeat center center fixed'
       html.style.backgroundSize = 'contain'
     }
 
